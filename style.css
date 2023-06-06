@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+header {
+    margin-top: 25px;
+    align-items: right;
+    justify-content: flex-end;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra */
+}
+
+.right-icons {
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.39);
+    justify-content: flex-end;
+    padding: 10px;
+        
+}
+
+.right-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave de 0.5 segundos */
+}
+
+.right-icons img:hover {
+    transform: scale(1.45); /* Aumenta o tamanho do ícone em % */
+}
+
+body {
+    height: 90vh; /* Define a altura do body como 90% da altura da viewport */
+    margin: 0; /* Remove as margens padrão do body */
+    background-image:url("/assets/backgroundGif.gif");
+    background-repeat: no-repeat;
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+}
+  
+.imagem {
+    padding: 10px;
+    width: 50%; /* Ajusta a largura conforme necessário */
+    opacity: 0.90; /* Define a opacidade da imagem como 90% */
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-left: 90px;
+    width: 30%; /* Ajuste a largura conforme necessário */
+}
+
+
+.texto {
+    position: absolute;
+    top: 35%;
+    right: -10%;
+    transform: translate(-30%, -40%);
+    background-color: rgba(211, 211, 211, 0.39);
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(102, 102, 102);
+    font-size: 22px;
+    text-align: justify;
+    border-radius: 10px;
+    width: 780px;
+    margin-top: 100px;
+    margin-right: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto */
+}
+
+footer {
+	text-align: center;
+	background-color: rgba(211, 211, 211, 0.39);
+	padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra */
+    color: rgb(102, 102, 102);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.copyright {
+	font-size: 18px;
+	margin: 15px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+
+
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center; /* Centraliza os ícones no header */
+    }
+
+    .right-icons {
+        justify-content: center; /* Centraliza os ícones no header */
+    }
+
+    .background {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center; /* Adicione essa linha para centralizar horizontalmente */
+    }
+
+    .imagem {
+        margin: 0 auto; /* Altere a margem para 0 auto para centralizar horizontalmente */
+        margin-top: 25px;
+        width: 80%; /* Ajuste a largura conforme necessário */
+        display: block; /* Adicione display: block para centralizar corretamente */
+    }
+
+    .texto {
+        position: static;
+        width: auto;
+        transform: none;
+        margin: 20px;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
