@@ -150,41 +150,9 @@ footer {
     margin-bottom: 10px;
 }
 
+ 
 
 @media screen and (max-width: 768px) {
-    .swiper-slide {
-        width: 500px !important;
-    }
-  
-    .swiper-container {
-        overflow: visible !important;
-    }
-  
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: block !important;
-    }
-  
-    .swiper-pagination {
-        display: none !important;
-    }
-  
-    .swiper-wrapper {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-  
-    .swiper-slide img {
-        height: 320px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        margin-left: 5px;
-        margin-right: 5px;
-        transition: transform 0.5s ease-in-out;
-    }
-  
-    .swiper-slide img:hover {
-        transform: none;
-    }
-}
+
+
+}  
