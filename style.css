@@ -35,7 +35,7 @@ body {
 }
 
 .content {
-    min-height: calc(90vh - 110px); /* Ajuste para caber header e footer */
+    min-height: calc(90vh - 110px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,7 +56,7 @@ body {
 
 .texto {
     background-color: rgba(211, 211, 211, 0.39);
-    padding: 40px;
+    padding: 15px 40px; /* espaçamento vertical menor */
     color: rgb(102, 102, 102);
     font-size: 22px;
     text-align: justify;
@@ -81,7 +81,6 @@ footer {
     font-family: sans-serif;
 }
 
-/* Responsividade para telas menores que 768px */
 @media screen and (max-width: 768px) {
     header {
         justify-content: center;
@@ -105,7 +104,7 @@ footer {
 
     .texto {
         width: 90%;
-        padding: 20px;
+        padding: 15px 20px; /* ajuste também para mobile */
         font-size: 18px;
     }
 }
